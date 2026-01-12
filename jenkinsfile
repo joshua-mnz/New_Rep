@@ -14,8 +14,8 @@ pipeline
 			steps
 			{
 				git(
-				    	url: 'git@github.com:joshua-mnz/New_Rep.git',
-					branch: 'main'
+				    	url: 'https://github.com/joshua-mnz/New_Rep.git',
+					branch:'main'
 				)
 			}
 		}
