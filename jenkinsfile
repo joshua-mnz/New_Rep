@@ -42,21 +42,21 @@ pipeline
 				}
 			}
 		}
-		post
+	}
+	post
+	{
+		success
 		{
-			success
-			{
-				echo 'Pipeline succeeded!'
-			}
-			failure
-			{
-				echo 'Pipeline failed'
-			}
-			always
-			{
-				echo 'Cleaning up Workspace'
-				deleteDir()
-			}
+			echo 'Pipeline succeeded!'
+		}
+		failure
+		{
+			echo 'Pipeline failed'
+		}
+		always
+		{
+			echo 'Cleaning up Workspace'
+			deleteDir()
 		}
 	}
 }
